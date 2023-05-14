@@ -250,9 +250,9 @@ button:hover {
     text-align: center;
 }
 
-[value="להורדת פריקט"] {
+[value="להורדת פרויקט"] {
     height: 30px;
-    width: 73px;
+    width: 77px;
     font-weight: 900;
     font-weight: bold;
     font-size: 0.7rem;
@@ -268,7 +268,7 @@ button:hover {
 
 [value="לאתר"] {
     height: 30px;
-    width: 73px;
+    width: 77px;
     font-weight: 900;
     font-weight: bold;
     font-size: 0.7rem;
@@ -283,7 +283,7 @@ button:hover {
 }
 
 
-[value="להורדת פריקט"]:hover,
+[value="להורדת פרויקט"]:hover,
 [value="לאתר"]:hover {
     transform: scale(1.2);
 }
