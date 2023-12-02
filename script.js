@@ -30,7 +30,7 @@ const usersManager = new Project(
 const pageBuilder = new Project(
     1,
     "Page Builder",
-    "This Project is tool pallete for creating new html elements",
+    "This Project is tool pallete for creating new html elements.",
     {
         url: "./img/JSProjects/PageBuilder.png",
         alt: "Page Builder"
@@ -62,15 +62,31 @@ const creditCard = new Project(
         url: "./img/JSProjects/CreditCard.png",
         alt: "Credit Card"
     },
-    "",
-    "",
+    " https://konstantinusmutabilis.github.io/Credit-Card/",
+    "https://github.com/KonstantinusMutabilis/Credit-Card/",
     "./Credit Card/creditcard.html"
 
 )
 
+const shoppingCart = new Project(
+    4,
+    "Shopping Cart",
+    "This is shopping cart. Here is a lot of object oriented work",
+    {
+        url: "./img/JSProjects/ShoppingCart.png",
+        alt: "Credit Card"
+    },
+    "https://konstantinusmutabilis.github.io/Shopping-Cart/",
+    "https://github.com/KonstantinusMutabilis/Shopping-Cart/",
+    "./Shopping Cart/shoppingcart.html"
+
+)
+
+
+
 const projectsArray = new Array();
 
-projectsArray.push(usersManager, pageBuilder, memoryGame, creditCard);
+projectsArray.push(usersManager, pageBuilder, memoryGame, creditCard, shoppingCart);
 
 function cardCreation() {
 
