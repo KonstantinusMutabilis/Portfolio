@@ -4,8 +4,8 @@ const jsworks = document.querySelector(".jsworks");
 
 
 function Project(id, name, description, image, page, code, way) {
-    this.id = id,
-        this.name = name,
+    //this.id = id,
+    this.name = name,
         this.description = description,
         this.image = image,
         this.page = page,
@@ -14,7 +14,7 @@ function Project(id, name, description, image, page, code, way) {
 }
 
 const usersManager = new Project(
-    0,
+    //0,
     "Users Manager",
     "This is a project that Manage Users",
     {
@@ -28,7 +28,7 @@ const usersManager = new Project(
 );
 
 const pageBuilder = new Project(
-    1,
+    //1,
     "Page Builder",
     "This Project is tool pallete for creating new html elements.",
     {
@@ -41,7 +41,7 @@ const pageBuilder = new Project(
 );
 
 const memoryGame = new Project(
-    2,
+    //2,
     "Memory Game",
     "This is memory game where you should chuse 2 cards, and they must be the same color",
     {
@@ -55,7 +55,7 @@ const memoryGame = new Project(
 )
 
 const creditCard = new Project(
-    3,
+    //3,
     "Credit Card",
     "This is credit card form that sends data to email after filling all fields right way",
     {
@@ -69,7 +69,7 @@ const creditCard = new Project(
 )
 
 const shoppingCart = new Project(
-    4,
+    //4,
     "Shopping Cart",
     "This is shopping cart. Here is a lot of object oriented work",
     {
@@ -77,6 +77,21 @@ const shoppingCart = new Project(
         alt: "Credit Card"
     },
     "https://konstantinusmutabilis.github.io/Shopping-Cart/",
+    "https://github.com/KonstantinusMutabilis/ToDo-List",
+    "./ToDoList/todolist.html"
+
+)
+
+
+const ToDoList = new Project(
+    //5,
+    "ToDo List",
+    "Todo List created with Bootstrap and Typescript, there is options to add, edit, delete and find tasks",
+    {
+        url: "./img/JSProjects/ToDoList.png",
+        alt: "ToDo List"
+    },
+    "https://konstantinusmutabilis.github.io/ToDo-List/",
     "https://github.com/KonstantinusMutabilis/Shopping-Cart/",
     "./Shopping Cart/shoppingcart.html"
 
@@ -135,7 +150,7 @@ function popUp() {
 
     cards.forEach(card => {
 
-
+        let i = cards.indexOf(card)
 
         document.querySelector('.jsbutton').addEventListener("keyup", function add(event) {
             event.preventDefault();
