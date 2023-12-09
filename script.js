@@ -3,7 +3,7 @@ const jsworks = document.querySelector(".jsworks");
 
 
 
-function Project(id, name, description, image, page, code, way) {
+function Project(name, description, image, page, code, way) {
     //this.id = id,
     this.name = name,
         this.description = description,
@@ -78,7 +78,7 @@ const shoppingCart = new Project(
     },
     "https://konstantinusmutabilis.github.io/Shopping-Cart/",
     "https://github.com/KonstantinusMutabilis/ToDo-List",
-    "./ToDoList/todolist.html"
+    "./Shopping Cart/shoppingcart.html"
 
 )
 
@@ -86,14 +86,14 @@ const shoppingCart = new Project(
 const ToDoList = new Project(
     //5,
     "ToDo List",
-    "Todo List created with Bootstrap and Typescript, there is options to add, edit, delete and find tasks",
+    "Todo List created with Bootstrap and Typescript, there are options to add, edit, delete and find tasks",
     {
         url: "./img/JSProjects/ToDoList.png",
         alt: "ToDo List"
     },
     "https://konstantinusmutabilis.github.io/ToDo-List/",
     "https://github.com/KonstantinusMutabilis/Shopping-Cart/",
-    "./Shopping Cart/shoppingcart.html"
+    "./ToDoList/todolist.html"
 
 )
 
@@ -101,7 +101,7 @@ const ToDoList = new Project(
 
 const projectsArray = new Array();
 
-projectsArray.push(usersManager, pageBuilder, memoryGame, creditCard, shoppingCart);
+projectsArray.push(usersManager, pageBuilder, memoryGame, creditCard, shoppingCart, ToDoList);
 
 function cardCreation() {
 
@@ -150,7 +150,7 @@ function popUp() {
 
     cards.forEach(card => {
 
-        let i = cards.indexOf(card)
+        let i = cards.indexOf(card);
 
         document.querySelector('.jsbutton').addEventListener("keyup", function add(event) {
             event.preventDefault();
@@ -194,6 +194,7 @@ function popUp() {
             button2.setAttribute('value', "לאתר");
             a2.appendChild(button2);
             Project.appendChild(buttonDiv);
+
 
 
         });
